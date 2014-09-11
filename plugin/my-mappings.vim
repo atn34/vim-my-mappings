@@ -4,9 +4,6 @@ else
   let g:loaded_my_mappings = 1
 endif
 
-let mapleader=" "
-let maplocalleader="\\"
-
 " make Y consistent with D and C
 nnoremap Y y$
 
