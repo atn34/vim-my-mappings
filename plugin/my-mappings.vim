@@ -38,4 +38,6 @@ nnoremap <leader>w :w<CR>
 " hide matches
 nnoremap <leader>h :set invhlsearch<cr>
 
+" Select the item in the list with enter
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>" 
 
