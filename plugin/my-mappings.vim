@@ -5,36 +5,36 @@ else
 endif
 
 " make Y consistent with D and C
-nnoremap Y y$
+nnoremap <unique> Y y$
 
 " Reload vimrc
-map <silent> <leader>v :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+map <unique> <silent> <leader>v :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
 " swap default j k with gj gk
-noremap j gj
-noremap k gk
-noremap gj j
-noremap gk k
+noremap <unique> j gj
+noremap <unique> k gk
+noremap <unique> gj j
+noremap <unique> gk k
 
 " reuse args when repeating last substitute command
-nnoremap & :&&<CR>
-xnoremap & :&&<CR>
+nnoremap <unique> & :&&<CR>
+xnoremap <unique> & :&&<CR>
 
 " Set working directory
-nnoremap <leader>. :lcd %:p:h<CR>
+nnoremap <unique> <leader>. :lcd %:p:h<CR>
 
 " Quit preview window
-nnoremap <leader>z <c-w>z
+nnoremap <unique> <leader>z <c-w>z
 
 " Quit window on <leader>q
-nnoremap <leader>q :q<CR>
+nnoremap <unique> <leader>q :q<CR>
 
 " save on <leader>w
-nnoremap <leader>w :w<CR>
+nnoremap <unique> <leader>w :w<CR>
 
 " hide matches
-nnoremap <leader>h :set invhlsearch<cr>
+nnoremap <unique> <leader>h :set invhlsearch<cr>
 
 " Select the item in the list with enter
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>" 
+inoremap <unique> <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>" 
 
