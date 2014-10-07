@@ -16,6 +16,10 @@ noremap <unique> k gk
 noremap <unique> gj j
 noremap <unique> gk k
 
+" swag default gf with gF
+nnoremap <unique> gf gF
+nnoremap <unique> gF gf
+
 " reuse args when repeating last substitute command
 nnoremap <unique> & :&&<CR>
 xnoremap <unique> & :&&<CR>
