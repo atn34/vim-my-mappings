@@ -31,13 +31,13 @@ nnoremap <unique> <leader>. :lcd %:p:h<CR>
 nnoremap <unique> <leader>z <c-w>z
 
 " Quit window on <leader>q
-nnoremap <unique> <leader>q :q<CR>
+nnoremap <unique> <silent> <leader>q :q<CR>
 
 " save on <leader>w
-nnoremap <unique> <leader>w :w<CR>
+nnoremap <unique> <silent> <leader>w :w<CR>
 
 " hide matches
-nnoremap <unique> <leader>h :set invhlsearch<cr>
+nnoremap <unique> <silent> <leader>h :set hlsearch!<cr>
 
 " Select the item in the list with enter
 inoremap <unique> <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>" 
