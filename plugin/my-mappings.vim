@@ -20,6 +20,17 @@ noremap <unique> gk k
 nnoremap <unique> gf gF
 nnoremap <unique> gF gf
 
+" tab switching
+nnoremap <unique> <silent> <leader>1 1gt
+nnoremap <unique> <silent> <leader>2 2gt
+nnoremap <unique> <silent> <leader>3 3gt
+nnoremap <unique> <silent> <leader>4 4gt
+nnoremap <unique> <silent> <leader>5 5gt
+nnoremap <unique> <silent> <leader>6 6gt
+nnoremap <unique> <silent> <leader>7 7gt
+nnoremap <unique> <silent> <leader>8 8gt
+nnoremap <unique> <silent> <leader>9 9gt
+
 " reuse args when repeating last substitute command
 nnoremap <unique> & :&&<CR>
 xnoremap <unique> & :&&<CR>
