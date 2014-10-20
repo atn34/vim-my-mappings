@@ -55,3 +55,6 @@ inoremap <unique> <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " Toggle spelling locally
 nnoremap <unique> <silent> <leader>s :setlocal spell!<cr>
+
+" Load all occurrences of current pattern into quickfix
+nnoremap <unique> <silent> <leader>/ :vimgrep // %<CR>:copen<CR>
