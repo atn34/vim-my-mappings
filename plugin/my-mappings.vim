@@ -31,6 +31,8 @@ nnoremap <unique> <silent> <leader>7 7gt
 nnoremap <unique> <silent> <leader>8 8gt
 nnoremap <unique> <silent> <leader>9 9gt
 
+nnoremap <unique> <silent> <leader>t :tabnew<CR>
+
 " reuse args when repeating last substitute command
 nnoremap <unique> & :&&<CR>
 xnoremap <unique> & :&&<CR>
