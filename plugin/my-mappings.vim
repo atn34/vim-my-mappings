@@ -11,10 +11,8 @@ nnoremap <unique> Y y$
 map <unique> <silent> <leader>v :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
 " swap default j k with gj gk
-noremap <unique> j gj
-noremap <unique> k gk
-noremap <unique> gj j
-noremap <unique> gk k
+noremap <unique> <expr> j (v:count == 0 ? 'gj' : 'j')
+noremap <unique> <expr> k (v:count == 0 ? 'gk' : 'k')
 
 " swag default gf with gF
 nnoremap <unique> gf gF
@@ -31,7 +29,7 @@ nnoremap <unique> <silent> <leader>7 7gt
 nnoremap <unique> <silent> <leader>8 8gt
 nnoremap <unique> <silent> <leader>9 9gt
 
-nnoremap <unique> <silent> <leader>t :tabnew<CR>
+nnoremap <unique> <silent> <leader>t :tabnew %<CR>
 
 " reuse args when repeating last substitute command
 nnoremap <unique> & :&&<CR>
