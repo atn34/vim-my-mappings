@@ -12,8 +12,12 @@ map <unique> <silent> <leader>v :source ~/.vimrc<CR>:filetype detect<CR>:exe ":e
 
 " when j is given a count, push cursor to jump list and execute <count>j
 " otherwise, execute gj. Same for k.
-noremap <unique> <silent> <expr> j (v:count == 0 ? 'gj' : ":<C-U>exec ':norm! m`' . v:count . 'j'<CR>")
-noremap <unique> <silent> <expr> k (v:count == 0 ? 'gk' : ":<C-U>exec ':norm! m`' . v:count . 'k'<CR>")
+nnoremap <unique> <silent> <expr> j (v:count == 0 ? 'gj' : ":<C-U>exec ':norm! m`' . v:count . 'j'<CR>")
+nnoremap <unique> <silent> <expr> k (v:count == 0 ? 'gk' : ":<C-U>exec ':norm! m`' . v:count . 'k'<CR>")
+
+" the above breaks visual mode.
+xnoremap <unique> <expr> j (v:count == 0 ? 'gj' : 'j')
+xnoremap <unique> <expr> k (v:count == 0 ? 'gk' : 'k')
 
 " swag default gf with gF
 nnoremap <unique> gf gF
