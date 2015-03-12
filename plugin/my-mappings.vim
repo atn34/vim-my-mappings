@@ -11,9 +11,9 @@ nnoremap <unique> Y y$
 map <unique> <silent> <leader>v :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
 " when j is given a count, push cursor to jump list and execute <count>j
-" otherwise, execute gj
-noremap <unique> <expr> j (v:count == 0 ? 'gj' : ":<C-U> :exec ':norm! m`' . v:count . 'j'<CR>")
-noremap <unique> <expr> k (v:count == 0 ? 'gk' : ":<C-U> :exec ':norm! m`' . v:count . 'k'<CR>")
+" otherwise, execute gj. Same for k.
+noremap <unique> <silent> <expr> j (v:count == 0 ? 'gj' : ":<C-U>exec ':norm! m`' . v:count . 'j'<CR>")
+noremap <unique> <silent> <expr> k (v:count == 0 ? 'gk' : ":<C-U>exec ':norm! m`' . v:count . 'k'<CR>")
 
 " swag default gf with gF
 nnoremap <unique> gf gF
