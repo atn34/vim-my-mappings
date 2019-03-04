@@ -55,9 +55,6 @@ nnoremap <unique> <silent> <leader>w :w<CR>
 " hide matches
 nnoremap <unique> <silent> <leader>h :set hlsearch!<cr>
 
-" Select the item in the list with enter
-inoremap <unique> <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>" 
-
 " Toggle spelling locally
 nnoremap <unique> <silent> <leader>s :setlocal spell!<cr>
 
